@@ -13,25 +13,35 @@ app.listen(port, ()=>{
   console.log(`el port::${port} funciona`)
 });
 
+
+
 io.on('connection', (socket)=>{
   socket.emit("hello", "world")
   console.log("cliente connectado")
 
-  let code= nouCodi()
 
-  socket.emit('generarCodigo', this.code)
+  let code
+
+  socket.on('generarCodigo', (args)=>{
+    code= nouCodi()
+    console.log(code)
+
+    socket.emit("nouCode", code)
+
+  })
+
 
 
 })
 
 function nouCodi(){
-  var chars = 'ABCDEFGHIJKLNMOPQRSTUVWXYZ1234567890'
-  var code= ''
-  var num = 0
+  const chars = 'ABCDEFGHIJKLNMOPQRSTUVWXYZ1234567890'
+  let code= ''
+  let num
 
   for (let i = 0; i < 5; i++) {
     num= Math.floor(Math.random() * chars.length+1);
-    code.concat(chars.charAt(num))
+    code= code + chars.charAt(num)
   }
 
   return code

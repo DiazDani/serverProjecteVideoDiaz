@@ -24,9 +24,22 @@ io.on('connection', (socket)=>{
 
   socket.on('generarCodigo', (args)=>{
     code= nouCodi()
+
     console.log(code)
 
     socket.emit("nouCode", code)
+
+  })
+
+socket.on('EnviarCodiPeli', (newCode)=>{
+  console.log("aaaaa")
+    console.log(newCode)
+
+    if(newCode==code){
+      console.log('true')
+    }else{
+      console.log('false')
+    }
 
   })
 

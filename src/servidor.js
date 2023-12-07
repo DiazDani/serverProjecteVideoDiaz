@@ -4,10 +4,21 @@ const cors = require('cors');
 const {Server} = require("socket.io")
 const io = new Server(8888)
 const fs = require('fs')
+const path = require('path');
+
 
 app.use(cors());
 app.use(express.json());
 port = 3080;
+
+
+
+const videos = [
+  { name: 'Avatar 2', path: 'assets/videos/Avatar 2.mp4', valid: false },
+  { name: 'Guardianes de la galaxia vol 3.mp4', path: 'assets/videos/Guardianes de la galaxia vol 3.mp4', valid: false },
+  { name: 'OPPENHEIMER', path: 'assets/videos/OPPENHEIMER.mp4', valid: false },
+  { name: 'Five Nights At Freddy\'s.mp4', path: 'assets/videos/Five Nights At Freddys.mp4', valid: false },
+]
 
 app.listen(port, () => {
   console.log(`el port::${port} funciona`)
@@ -18,6 +29,7 @@ io.on('connection', (socket) => {
   socket.emit("hello", "world")
   console.log("cliente connectado")
 
+  socket.emit('listaVideos', videos);
 
   socket.on('generarCodigo', (args) => {
     code = nouCodi();

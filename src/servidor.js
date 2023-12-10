@@ -50,10 +50,10 @@ uploader.on('end', (fileInfo) => {
 
 // Videos disponibles para reproducir
 const videos = {
-  video1: 'C:\\Users\\Pau Casas\\IdeaProjects\\serverProjecteVideoDiaz\\src\\assets\\trailer1.mp4',
-  video2: 'C:\\Users\\Pau Casas\\IdeaProjects\\serverProjecteVideoDiaz\\src\\assets\\onepiecetrailer.mp4',
-  video3: 'C:\\Users\\Pau Casas\\IdeaProjects\\serverProjecteVideoDiaz\\src\\assets\\trailerendgame.mp4',
-  video4: 'C:\\Users\\Pau Casas\\IdeaProjects\\serverProjecteVideoDiaz\\src\\assets\\trailerpiratasdelcaribe.mp4',
+  video1: 'C:\\Users\\Joan Casas\\IdeaProjects\\ddd\\serverProjecteVideoDiaz\\src\\assets\\trailer1.mp4',
+  video2: 'C:\\Users\\Joan Casas\\IdeaProjects\\ddd\\serverProjecteVideoDiaz\\src\\assets\\onepiecetrailer.mp4',
+  video3: 'C:\\Users\\Joan Casas\\IdeaProjects\\ddd\\serverProjecteVideoDiaz\\src\\assets\\trailerendgame.mp4',
+  video4: 'C:\\Users\\Joan Casas\\IdeaProjects\\ddd\\serverProjecteVideoDiaz\\src\\assets\\trailerpiratasdelcaribe.mp4',
 
 };
 

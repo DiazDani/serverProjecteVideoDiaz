@@ -15,9 +15,9 @@ port = 3080;
 
 const videos = [
   { name: 'Avatar 2', path: 'assets/videos/Avatar 2.mp4', valid: false },
-  { name: 'Guardianes de la galaxia vol 3.mp4', path: 'assets/videos/Guardianes de la galaxia vol 3.mp4', valid: false },
+  { name: 'Guardianes de la galaxia vol 3', path: 'C:\\Users\\ddiaz\\IdeaProjects\\serverProjecteVideoDiaz\\src\\assets\\Avatar 2.mp4', valid: false },
   { name: 'OPPENHEIMER', path: 'assets/videos/OPPENHEIMER.mp4', valid: false },
-  { name: 'Five Nights At Freddy\'s.mp4', path: 'assets/videos/Five Nights At Freddys.mp4', valid: false },
+  { name: 'Five Nights At Freddy\'s', path: 'assets/videos/Five Nights At Freddys.mp4', valid: false },
 ]
 
 app.listen(port, () => {

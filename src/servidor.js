@@ -12,13 +12,13 @@ app.use(express.json());
 port = 3080;
 
 
-
+app.use(express.static('assets'));
 
 const videos = [
-  { name: 'Avatar 2', path: 'C:\\Users\\ddiaz\\IdeaProjects\\serverProjecteVideoDiaz\\src\\assets\\Avatar 2.mp4', valid: false },
+  { name: 'Avatar 2', path: __dirname + '/assets/Avatar 2.mp4', valid: false },
   { name: 'Guardianes de la galaxia vol 3', path: __dirname + '/assets/Guardianes de la galaxia vol 3.mp4', valid: false },
-  { name: 'OPPENHEIMER', path: 'src\\assets\\OPPENHEIMER.mp4', valid: false },
-  { name: 'Five Nights At Freddy\'s', path: 'src/assets/videos/Five Nights At Freddys.mp4', valid: false },
+  { name: 'OPPENHEIMER', path: __dirname + '/assets/OPPENHEIMER.mp4', valid: false },
+  { name: 'Five Nights At Freddy\'s', path: __dirname + '/assets/Five Nights At Freddys.mp4', valid: false },
 ]
 
 app.listen(port, () => {

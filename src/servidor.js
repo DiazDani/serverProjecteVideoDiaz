@@ -15,10 +15,10 @@ port = 3080;
 app.use(express.static('assets'));
 
 const videos = [
-  { name: 'Avatar 2', path: __dirname + '/assets/Avatar 2.mp4', valid: false },
-  { name: 'Guardianes de la galaxia vol 3', path: __dirname + '/assets/Guardianes de la galaxia vol 3.mp4', valid: false },
-  { name: 'OPPENHEIMER', path: __dirname + '/assets/OPPENHEIMER.mp4', valid: false },
-  { name: 'Five Nights At Freddy\'s', path: __dirname + '/assets/Five Nights At Freddys.mp4', valid: false },
+  { name: 'Avatar 2', path:'Avatar 2.mp4', valid: false },
+  { name: 'Guardianes de la galaxia vol 3', path: 'Guardianes de la galaxia vol 3.mp4', valid: false },
+  { name: 'OPPENHEIMER', path: 'OPPENHEIMER.mp4', valid: false },
+  { name: 'Five Nights At Freddy\'s', path:  'Five Nights At Freddys.mp4', valid: false },
 ]
 
 app.listen(port, () => {
